@@ -23,7 +23,7 @@ This project demonstrates a full-stack, production-like setup using Kubernetes i
 ├── app/
 │   ├── app.py
 │   └── Dockerfile
-├── k8s/
+├── manifests/
 │   ├── configmap.yaml
 │   ├── secret.yaml
 │   ├── deployment.yaml
@@ -75,7 +75,7 @@ kubectl port-forward svc/prometheus 9090:9090 -n monitoring
 
 ## 📌 Author
 
-- **Your Name**
-- Email: your.email@example.com
-- [LinkedIn](https://linkedin.com/in/yourprofile)
-- [GitHub](https://github.com/yourusername)
+- **Vamshi Krishna**
+- Email: vamshi9849@live
+- [LinkedIn](https://www.linkedin.com/in/vamshi7/)
+- [GitHub](https://github.com/vamshii7)
