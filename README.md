@@ -1,4 +1,4 @@
-# Kubernetes Lab Project for TCS Interview Preparation
+# Kubernetes Lab Project
 
 This project demonstrates a full-stack, production-like setup using Kubernetes in a local `kind` cluster, mimicking Azure Kubernetes Service (AKS) best practices.
 
@@ -75,7 +75,7 @@ kubectl port-forward svc/prometheus 9090:9090 -n monitoring
 
 ## 📌 Author
 
-- **Your Name**
-- Email: your.email@example.com
-- [LinkedIn](https://linkedin.com/in/yourprofile)
-- [GitHub](https://github.com/yourusername)
+- **Vamshi Krishna**
+- Email: vamshi9849@live
+- [LinkedIn](https://www.linkedin.com/in/vamshi7/)
+- [GitHub](https://github.com/vamshii7)
