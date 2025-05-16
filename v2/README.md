@@ -1,4 +1,4 @@
-# Kubernetes Lab Project for TCS Interview Preparation
+# Kubernetes Lab Project
 
 This project demonstrates a full-stack, production-like setup using Kubernetes in a local `kind` cluster, mimicking Azure Kubernetes Service (AKS) best practices.
 
