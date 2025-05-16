@@ -23,7 +23,7 @@ This project demonstrates a full-stack, production-like setup using Kubernetes i
 ├── app/
 │   ├── app.py
 │   └── Dockerfile
-├── k8s/
+├── manifests/
 │   ├── configmap.yaml
 │   ├── secret.yaml
 │   ├── deployment.yaml
