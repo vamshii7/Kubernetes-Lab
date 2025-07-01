@@ -76,6 +76,6 @@ kubectl port-forward svc/prometheus 9090:9090 -n monitoring
 ## 📌 Author
 
 - **Vamshi Krishna**
-- Email: vamshi9849@live
+- Email: vamshi9849@live.com
 - [LinkedIn](https://www.linkedin.com/in/vamshi7/)
 - [GitHub](https://github.com/vamshii7)
