@@ -1,3 +1,3 @@
 #!/bin/bash
-kind create cluster --name tcs-lab
-kubectl cluster-info --context kind-tcs-lab
+kind create cluster --name k8s-lab
+kubectl cluster-info --context kind-k8s-lab
