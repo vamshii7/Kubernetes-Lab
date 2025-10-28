@@ -1,21 +1,27 @@
 name: CI/CD
 
 on:
-  push:
-    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        app: [v1, v2]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          path: ${{ matrix.app }}
 
-      - name: Build Docker image
-        run: docker build -t flask-configmap:latest ./app
+      - name: Build Docker image for ${{ matrix.app }}
+        run: |
+          cd ${{ matrix.app }}/app
+          docker build -t flask-configmap:${{ matrix.app }} .
 
       - name: Load image into kind
-        run: kind load docker-image flask-configmap:latest
+        run: kind load docker-image flask-configmap:${{ matrix.app }}
 
       - name: Deploy to kind
-        run: kubectl apply -f manifests/
+        run: kubectl apply -f ${{ matrix.app }}/manifests/
