@@ -1,0 +1,21 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t flask-configmap:latest ./app
+
+      - name: Load image into kind
+        run: kind load docker-image flask-configmap:latest
+
+      - name: Deploy to kind
+        run: kubectl apply -f manifests/
